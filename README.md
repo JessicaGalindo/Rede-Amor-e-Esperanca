@@ -1,4 +1,4 @@
-![Logo of the project](https://github.com/JessicaGalindo/Rede-Amor-e-Esperanca/blob/master/public/images/logo-rede-alta.png)
+<img src="https://github.com/JessicaGalindo/Rede-Amor-e-Esperanca/blob/master/public/images/logo-rede-alta.png" width="150">
 
 ## Rede Amor e Esperança
 
@@ -15,29 +15,11 @@ Here are the technologies used in this project.
 * Javascript
 
 
-## Services Used
-
-* Github
-
-
-## Getting started
-
-* To install gems:
->    $ bundle install
-* To create the bank and do as migrations:
->    $ rake db:create db:migrate db:seed
-* To run the project:
->    $ rails s
-
 ## How to use
 
 Here will be the images and descriptions. Principal content.
 
 ![Home_Screen](https://github.com/JessicaGalindo/Rede-Amor-e-Esperanca/blob/master/public/readme_images/pagina_inicial.PNG)
-
-## Features
-
-  - Here will be the features.
 
 
 ## Links
@@ -54,7 +36,7 @@ Here will be the images and descriptions. Principal content.
 1.0.0.0
 
 
-## Authors
+## Author
 
 * **Jéssica Galindo**: [Linkedin](https://www.linkedin.com/in/jessica-galindo/)
 
