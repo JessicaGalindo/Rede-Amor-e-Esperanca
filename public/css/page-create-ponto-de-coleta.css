@@ -1,0 +1,23 @@
+#create-ponto-de-coleta {
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/*espaço em cima do mapa*/
+.map-container {
+    margin: 0 0 4rem;
+}
+
+/*arredonda o mapa em cima e deixa reta a borda de baixo */
+.map-container .leaflet-container {
+    border-radius: 20px 20px 0 0;
+}
+
+.map-container footer{
+    background-color: #f5f8fa;
+    border-radius: 0 0 20px 20px;
+}
