@@ -66,6 +66,7 @@ a.create-coleta:hover {
   border-radius: 20px;
 }
 
+/*dentro do botao marcador ->*/
 .leaflet-popup-content {
   color: #0089a5;
   font-size: 2rem;
@@ -87,7 +88,7 @@ a.create-coleta:hover {
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   transition: background-color .2s;
 }
