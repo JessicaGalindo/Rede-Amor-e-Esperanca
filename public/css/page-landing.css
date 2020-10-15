@@ -9,7 +9,7 @@
 #container {
   margin: auto;
 
-  width: min(90%, 112rem);
+  width: min(90%, 132rem); /*112rem*/
 }
 
 .location,
@@ -58,6 +58,7 @@ main h1 {
   animation-delay: 200ms;
 }
 
+/*desktop version*/
 @media (min-width: 760px) {
   /*só executa se a condição for verdadeira - é implementada pelo viewport*/
 

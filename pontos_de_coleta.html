@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- permite comandos resposivos-->
+    <title>Pontos de Coleta</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+    <link rel="icon" href="./public/images/logo-rede-icon.png" />
+    <!--Logo topo do site-->
+
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/animations.css" />
+    <link rel="stylesheet" href="./public/css/page-coleta.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="page-coleta">
+      <aside class="animate-right">
+        <!-- barra lateral-->
+        <header>
+          <img src="./public/images/logo-rede-icon.png" alt="Marcador" /> <!--"./public/images/map-marker.svg"-->
+          <h2>Escolha um ponto de coleta no mapa</h2>
+          <p>Muitas crianças estão esperando sua doação :)</p>
+        </header>
+
+        <footer>
+          <strong>Presidente Prudente</strong>
+          <p>São Paulo</p>
+        </footer>
+      </aside>
+
+      <div id="mapid" class="animate-appear">
+        <!-- mapa -->
+      </div>
+
+      <a
+        href="create-coleta.html"
+        class="create-coleta"
+        title="Cadastre um ponto de coleta"
+      >
+        <img src="./public/images/plus.svg" alt="Criar ponto de coleta" />
+      </a>
+    </div>
+
+    <script src="./public/scripts/page-coleta.js"></script>
+  </body>
+</html>
