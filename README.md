@@ -2,17 +2,23 @@
 
 ## Rede Amor e Esperança
 
-Projeto em desenvolvimento durante a NLW#3 da Rocketseat, no período de 12 a 18 de outubro de 2020.  
-A ideia é criar um site para a Rede Amor e Esperança, Organização sem fins lucrativos em prol da construção da Casa de Apoio à Criança com Câncer em Presidente Prudente - SP.
+Project being developed during Rocketseat's NLW # 3, from October 12th to 18th, 2020.
+The idea is to create a website for the 'Rede Amor e Esperança', a non-profit organization for the construction of the Support House for Children with Cancer in Presidente Prudente - SP.
 
 
-## Technology 
+## Technologies 
 
-Here are the technologies used in this project.
+Here are the technologies used in this project for Front-end:
 
 * CSS
 * HTML
 * Javascript
+
+And Back-end:
+
+* Language: Javascript
+* Node.js
+* Git Bash
 
 
 ## How to use
