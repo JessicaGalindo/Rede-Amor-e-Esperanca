@@ -103,6 +103,11 @@ fieldset legend {
   position: relative; /* para que o .new-upload span fique relativo a esta caixa */
 }
 
+/* quando tiver um .new-upload seguido de outro aplica*/
+.new-upload + .new-upload {
+    margin-top: 2.4rem;
+}
+
 .new-upload span {
   position: absolute;
   display: flex;
