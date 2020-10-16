@@ -6,13 +6,19 @@ Projeto em desenvolvimento durante a NLW#3 da Rocketseat, no período de 12 a 18
 A ideia é criar um site para a Rede Amor e Esperança, Organização sem fins lucrativos em prol da construção da Casa de Apoio à Criança com Câncer em Presidente Prudente - SP.
 
 
-## Technology 
+## Technologies 
 
-Here are the technologies used in this project.
+Here are the technologies used in this project for Front-end:
 
 * CSS
 * HTML
 * Javascript
+
+And Back-end:
+
+* Language: Javascript
+* Node.js
+* Git Bash
 
 
 ## How to use
