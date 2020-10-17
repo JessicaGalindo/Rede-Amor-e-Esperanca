@@ -6,18 +6,37 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 //create icon
 const icon =L.icon({
-    iconUrl: "./public/images/map-marker.svg",
+    iconUrl: "/images/map-marker.svg",
     iconSize: [58, 68],
     iconAnchor: [29, 68],
     popupArchor: [170, 2]
 })
 
-const popup = L.popup({
-    closeButton: false,
-    className: 'map-popup',
-    minWidth: 240, 
-    minHeight: 240
-}).setContent('Lar das meninas <a href="ponto.html?id=1" class="choose-ponto"> <img src="./public/images/arrow-white.svg"> </a> ')
+function addMarker({id, name, lat, lng}) { //desestrutura o objeto 'ponto'. Ao inves de fazer ponto.id, faz {} e chama id
 
-L.marker([-22.1254599,-51.390325], {icon}).addTo(map)
+    const popup = L.popup({
+        closeButton: false,
+        className: 'map-popup',
+        minWidth: 240, 
+        minHeight: 240
+    }).setContent(`${name} <a href="/ponto?id=${id}" > <img src="/images/arrow-white.svg> </a> `)
+    //a `` é chamada de template string ou template literal
+    
+    L.marker([lat,lng], {icon})
+    .addTo(map)
     .bindPopup(popup)
+}
+
+const pontosSpan = document.querySelectorAll('.pontosDeColeta span')
+console.log(pontosSpan)
+
+pontosSpan.forEach(span => {
+    const ponto = {
+        id: span.dataset.id,
+        name: span.dataset.name,
+        lat: span.dataset.lat,
+        lng: span.dataset.lng
+    }
+
+    addMarker(ponto)
+})

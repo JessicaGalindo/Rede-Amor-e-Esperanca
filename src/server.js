@@ -1,6 +1,7 @@
 //importar pacotes
 const express = require("express");
 const path = require("path");
+const pages = require('./pages.js')
 
 //iniciando o express
 const server = express()
@@ -12,11 +13,11 @@ server
   .set("views", path.join(__dirname, "views"))
   .set('view engine', 'hbs')
 
-  //criar um caminho
-  .get("/", (request, response) => {
-    // / é o mesmo que index.html
-    return response.render('index')
-  })
+  //rotas da aplicação
+  .get("/", pages.index)
+  .get('/ponto', pages.ponto)
+  .get('/pontos_de_coleta', pages.pontosDeColeta)
+  .get('/create-ponto-de-coleta', pages.createPontoDeColeta)
 
 //ligar o servidor
 server.listen(5500)
