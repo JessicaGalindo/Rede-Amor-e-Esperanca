@@ -4,7 +4,7 @@ const Database = require('sqlite-async');
 function execute(db) {
     //cria a tabela e retorna no then acima
     return db.exec(`
-        CREATE TABLE IF NOT EXISTS tablePontoDeColeta(
+        CREATE TABLE IF NOT EXISTS tabelaPontoDeColeta(
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             lat TEXT, 
             lng TEXT, 
