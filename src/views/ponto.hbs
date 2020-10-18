@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- permite comandos resposivos-->
-    <title>Pontos de Coleta</title>
+    <title>{{ pontoDeColeta.name }}</title>
 
     <link
       rel="stylesheet"
@@ -24,10 +24,10 @@
 
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/animations.css" />
-    <link rel="stylesheet" href="/css/page-ponto.css" />
     <link rel="stylesheet" href="/css/sidebar.css" />
     <link rel="stylesheet" href="/css/map.css" />
     <link rel="stylesheet" href="/css/buttons.css" />
+    <link rel="stylesheet" href="/css/page-ponto.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
@@ -78,9 +78,13 @@
           </div>
 
           <div class="ponto-details-content">
-            <h1>Lar das Meninas</h1>
+            <h1>{{pontoDeColeta.name}}</h1>
 
-            <p>Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social.</p>
+            <p>
+              
+              {{pontoDeColeta.images}}
+              
+              Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social.</p>
 
             <div class="map-container">
               <div id="mapid"></div>

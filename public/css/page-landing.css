@@ -6,6 +6,11 @@
   display: flex;
 }
 
+ #logo {
+  animation-delay: 50ms;
+  /*  border-radius: 15rem; */
+} 
+
 #container {
   margin: auto;
 

@@ -19,7 +19,7 @@ function addMarker({id, name, lat, lng}) { //desestrutura o objeto 'ponto'. Ao i
         className: 'map-popup',
         minWidth: 240, 
         minHeight: 240
-    }).setContent(`${name} <a href="/ponto?id=${id}" > <img src="/images/arrow-white.svg"> </a> `)
+    }).setContent(`${name} <a href="/pontoDeColeta?id=${id}"> <img src="/images/arrow-white.svg"> </a>`)
     //a `` é chamada de template string ou template literal
     
     L.marker([lat,lng], {icon})
@@ -29,14 +29,15 @@ function addMarker({id, name, lat, lng}) { //desestrutura o objeto 'ponto'. Ao i
 
 const pontosSpan = document.querySelectorAll('.pontosDeColeta span')
 console.log(pontosSpan)
+console.log("passei no querySelectorAll")
 
 pontosSpan.forEach(span => {
-    const ponto = {
+    const pontoDeColeta = {
         id: span.dataset.id,
         name: span.dataset.name,
         lat: span.dataset.lat,
         lng: span.dataset.lng
     }
-
-    addMarker(ponto)
+    console.log('adicionei ponto')
+    addMarker(pontoDeColeta)
 })
