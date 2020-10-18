@@ -18,9 +18,9 @@ module.exports = {
       const db = await Database; //para acessar o database sem precisar usar o then
       //colocar a variavel pelo banco de dados
       const pontoDeColeta = await db.all(
-        'SELECT * FROM tabelaPontoDeColeta WHERE id = "2"'
+        'SELECT * FROM tabelaPontoDeColeta'
       )
-      return response.render("pontos_de_coleta", { pontosDeColeta })
+      return response.render("pontos_de_coleta", { pontoDeColeta })
     } catch (error) {
       console.log(error)
       return res.send("Erro no banco de dados!")

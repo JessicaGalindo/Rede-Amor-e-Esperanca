@@ -41,13 +41,6 @@ h1,
   background:#96FEFF;
 }
 
-/*logo */
-#logo {
-  animation-delay: 50ms;
-  border: 2px solid rgb(32, 17, 165);
-  border-radius: 15rem;
-}
-
 .location {
   animation-delay: 100ms;
 }
