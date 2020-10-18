@@ -19,7 +19,7 @@ function addMarker({id, name, lat, lng}) { //desestrutura o objeto 'ponto'. Ao i
         className: 'map-popup',
         minWidth: 240, 
         minHeight: 240
-    }).setContent(`${name} <a href="/pontoDeColeta?id=${id}"> <img src="/images/arrow-white.svg"> </a>`)
+    }).setContent(`${name} <a href="/ponto?id=${id}"> <img src="/images/arrow-white.svg"> </a>`)
     //a `` é chamada de template string ou template literal
     
     L.marker([lat,lng], {icon})

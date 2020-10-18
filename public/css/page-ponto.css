@@ -92,12 +92,15 @@ main {
   color: #4d6f80;
 }
 
+/* configurações aplicadas em open_hour e open_on_weekends */
 .open-details {
   margin-top: 2.4rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
+
+  line-height: 1.5;
 }
 
 .open-details div {
@@ -119,9 +122,17 @@ main {
 }
 
 .open-details .open-on-weekends {
-  background: linear-gradient(154.16deg, #edfff6 7.85%, #ffffff 91.03%);
-  border: 1px solid #a1e9c5;
   border-radius: 20px;
+}
 
+.open-on-weekends.open {
+  background: linear-gradient(154.16deg, #edfff6 91.03%, #ffffff 91.03%);
+  border: 1px solid #a1e9c5;
   color: #37C77F;
+}
+
+.open-on-weekends.closed {
+  background: linear-gradient(154.16deg, #fcf0f4 91.03%, #ffffff 91.03%);
+  border: 1px solid #ffbcd4;
+  color: #ff999d;
 }
