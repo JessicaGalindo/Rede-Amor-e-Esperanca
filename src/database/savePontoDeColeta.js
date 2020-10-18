@@ -6,7 +6,7 @@ function savePontoDeColeta(db, pontoDeColeta){
             lat, 
             lng, 
             name, 
-            about,
+            description,
             contato, 
             images, 
             instructions, 
@@ -16,12 +16,12 @@ function savePontoDeColeta(db, pontoDeColeta){
             '${pontoDeColeta.lat}',
             '${pontoDeColeta.lng}',
             '${pontoDeColeta.name}',
-            '${pontoDeColeta.about}',
+            '${pontoDeColeta.description}',
             '${pontoDeColeta.contato}',
             '${pontoDeColeta.images}',
             '${pontoDeColeta.instructions}',
             '${pontoDeColeta.opening_hours}',
-            '${pontoDeColeta.open_on_weeken}'
+            '${pontoDeColeta.open_on_weekends}'
         );
     `);
 };

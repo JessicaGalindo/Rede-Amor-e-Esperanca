@@ -9,7 +9,7 @@ function execute(db) {
             lat TEXT, 
             lng TEXT, 
             name TEXT, 
-            about TEXT, 
+            description TEXT, 
             contato TEXT, 
             images TEXT, 
             instructions TEXT, 
