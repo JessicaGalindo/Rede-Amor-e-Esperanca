@@ -19,7 +19,7 @@ function execute(db) {
     `) //a crase permite fazer quebra de linha e passar variaveis - template literals/strings
 }
 
-//abre o diretorio local e coloca um arquivo chamado databse.sqlite
+//abre o diretorio local e coloca um arquivo chamado database.sqlite
 //nao pode fazer nada sem ter criado o db, por isso utiliza a função then
 module.exports = Database.open(__dirname + '/database.sqlite').then(execute)
 //o module.exports executa o comando acima e joga para 'fora' 
