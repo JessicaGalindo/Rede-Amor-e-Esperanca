@@ -41,13 +41,13 @@ Database.then(async (db) => {
   //consulta todos os dados da tabela
   const selectedPontoDeColeta = await db.all("SELECT * FROM tabelaPontoDeColeta")
   console.log(selectedPontoDeColeta)
-  /*
-  //consultar somente 1 dado, pelo id
+  
+  //consultar somente 1 dado pelo seu id
   const pontoDeColeta = await db.all(
     'SELECT * FROM tabelaPontoDeColeta WHERE id = "2"'
   );
   console.log(pontoDeColeta);
-
+/*
   // remover um dado especifico da tabela
   console.log(await db.run("DELETE FROM tabelaPontoDeColeta WHERE id = '1'"))
 */
