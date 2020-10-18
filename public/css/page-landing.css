@@ -6,15 +6,14 @@
   display: flex;
 }
 
- #logo {
+#logo {
   animation-delay: 50ms;
-  /*  border-radius: 15rem; */
 } 
 
 #container {
   margin: auto;
 
-  width: min(90%, 132rem); /*112rem*/
+  width: min(90%, 132rem); 
 }
 
 .location,
