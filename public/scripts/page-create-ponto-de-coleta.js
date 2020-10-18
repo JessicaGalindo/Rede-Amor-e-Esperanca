@@ -92,3 +92,18 @@ function toggleSelect(event){
 
     input.value = button.dataset.value
 }
+
+//valida se lat e lng estão preenchidos antes de enviar o formulario
+function validate(event){
+  
+  //como lat e lng sao preenchidos juntos, se um nao for preenchido, o outro tambem nao será, assim
+  //pode validar apenas um dos campos, sendo: 
+  const inputLat = document.querySelector('[name="lat"]')
+  
+  //validar se está vazio
+  if (inputLat.value == "") {
+    event.preventDefault() //não envia o formulario
+    alert('Selecione um ponto de coleta no mapa')
+  } 
+  //se nao estiver vazio, envia normalmente
+}

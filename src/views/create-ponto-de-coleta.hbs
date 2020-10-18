@@ -52,7 +52,7 @@
       </aside>
 
       <main class="animate-appear with-sidebar">
-        <form action="">
+        <form action="save-pontoDeColeta" method="post" onsubmit="validate(event)">
           <fieldset>
             <!-- Separa os dados -->
             <legend>Dados</legend>
@@ -96,6 +96,7 @@
                     name="images"
                     placeholder="Cole o link da foto aqui"
                     required
+                    type = "url" {{!-- para trocar a mensagem de ingles para portugues, assistir codedrops no canal da rocketseat --}}
                   />
                   <span onclick="deleteField(event)">
                     <img

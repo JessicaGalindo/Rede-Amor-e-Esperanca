@@ -58,4 +58,36 @@ module.exports = {
   createPontoDeColeta(request, response) {
     return response.render("create-ponto-de-coleta");
   },
-};
+
+  async savePontoDeColeta(request, response) {
+    const fields = request.body;
+
+    //verifica se todos os campos estão preenchidos
+    //o fields é um array, onde cada posição é um dado do formulario
+    if(Object.values(fields).includes('')){
+      return response.send('Todos os campos devem ser preenchidos.')
+    }
+    
+    try{
+      //salva um ponto de coleta
+      const db = await Database
+      await savePontoDeColeta(db, {
+        lat: fields.lat, 
+        lng: fields.lng, 
+        name: fields.name, 
+        description: fields.description, 
+        contato: fields.contato, 
+        images: fields.images.toString(), 
+        instructions: fields.instructions, 
+        opening_hours: fields.opening_hours, 
+        open_on_weekends: fields.open_on_weekends
+      })
+
+      //redirecionamento
+      return response.redirect('/pontos_de_coleta')
+    } catch(error){
+      console.log(error)
+      return response.send('Erro no banco de dados')
+    }
+  } 
+}

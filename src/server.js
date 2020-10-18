@@ -6,6 +6,8 @@ const pages = require('./pages.js')
 //iniciando o express
 const server = express()
 server
+  //utilizar body do request
+  .use(express.urlencoded({extended: true}))
   //pasta de arquivos estaticos - cria a rota para o dinamico
   .use(express.static("public"))
 
@@ -18,6 +20,7 @@ server
   .get('/ponto', pages.ponto)
   .get('/pontos_de_coleta', pages.pontosDeColeta)
   .get('/create-ponto-de-coleta', pages.createPontoDeColeta)
+  .post('/save-pontoDeColeta', pages.savePontoDeColeta)
 
 //ligar o servidor
 server.listen(5500)
