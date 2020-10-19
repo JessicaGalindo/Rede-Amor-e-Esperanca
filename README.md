@@ -19,6 +19,7 @@ And Back-end:
 * Language: Javascript
 * Node.js
 * Git Bash
+* SQL (Structured Query Language)
 
 
 ## How to use
