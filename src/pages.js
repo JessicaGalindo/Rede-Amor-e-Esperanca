@@ -19,6 +19,8 @@ module.exports = {
       );
       const ponto = results[0];
 
+      //console.log(ponto);
+
       ponto.images = ponto.images.split(","); //array com as imagens separadas por ,
       ponto.firstImage = ponto.images[0]; //adiciona a primeira imagem
 
@@ -29,7 +31,7 @@ module.exports = {
         ponto.open_on_weekends = true;
       }
 
-      return response.render("ponto", { ponto }); //nao precisa passar ponto[0] por causa da variavel results
+      return response.render("ponto", {ponto}); //nao precisa passar ponto[0] por causa da variavel results
     } catch (error) {
       console.log(error);
       return response.send("Erro no banco de dados!");
@@ -46,10 +48,10 @@ module.exports = {
       //colocar a variavel pelo banco de dados
       const pontosDeColeta = await db.all("SELECT * FROM tabelaPontoDeColeta");
 
-      return response.render("pontos_de_coleta", { pontosDeColeta });
+      return response.render("pontos_de_coleta", {pontosDeColeta});
     } catch (error) {
       console.log(error);
-      return res.send("Erro no banco de dados!");
+      return response.send("Erro no banco de dados!");
     }
 
     //return response.render("pontos_de_coleta");

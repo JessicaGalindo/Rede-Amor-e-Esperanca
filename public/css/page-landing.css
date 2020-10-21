@@ -17,9 +17,13 @@
 }
 
 .location,
-h1,
-.visit p {
+h1{
+/* .visit p { */
   height: 16vh;
+}
+
+.visit p {
+  height: 24vh;
 }
 
 .visit a {
@@ -51,7 +55,7 @@ h1,
 
 main h1 {
   animation-delay: 150ms;
-  font-size: clamp(4rem, 8vw, 8.4rem); /*minimo, maximo, ideal*/
+  font-size: clamp(4rem, 7vw, 8.8rem); /*minimo, maximo, ideal*/
 }
 
 .visit p {
@@ -64,7 +68,7 @@ main h1 {
 
   #container{
     padding: 6rem 2rem;
-    background: url("../images/bg.svg") no-repeat 75% / clamp(30rem, 54vw, 56rem);
+    background: url("../images/bg.svg") no-repeat 80% / clamp(28rem, 52vw, 56rem);
   }
 
   header {
@@ -90,24 +94,26 @@ main h1 {
     font-weight: bold;
     line-height: .88;
 
-    margin: clamp(10%, 9vh, 12%) 0 4rem; /*distancia do texto central*/
+    margin: clamp(6%, 3vh, 10%) 0 4rem; /*clamp(10%, 9vh, 12%) distancia do texto central*/
 
-    width: min(300px, 80%);
+    width: min(400px, 80%);
   }
 
-  .visit{
+  .visit {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .visit p{
-    font-size: 2.4rem;
+  .visit p {
+    font-size: 2rem;
     line-height: 1.5;
-    width: clamp(20rem, 20vw, 43rem);
+    width: clamp(20rem, 29vw, 50rem); /* 20rem, 28vw, 43rem);  */
   }
 
-  .visit a{
+  /* botao -> */
+  .visit a {
     margin: initial;
+    margin-top: clamp(10rem, 14vh, 20rem); /* para o botao ficar mais abaixo no iPad */
   }
 }

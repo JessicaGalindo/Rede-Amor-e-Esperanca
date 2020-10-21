@@ -9,7 +9,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {}).addTo(
 const icon = L.icon({
   iconUrl: "/images/map-marker.svg",
   iconSize: [58, 68],
-  iconAnchor: [29, 68],
+  iconAnchor: [29, 68]
 });
 
 let marker; //let indica que pode ser alterado a qualquer momento da aplicação
@@ -20,8 +20,8 @@ map.on("click", (event) => {
   const lng = event.latlng.lng;
 
   //seleciona lat e lgn para enviar no formulario
-  document.querySelector("[name=lat").value = lat;
-  document.querySelector("[name=lng").value = lng;
+  document.querySelector("[name='lat']").value = lat;
+  document.querySelector("[name='lng']").value = lng;
 
   //se o marker ja existe, remove icon
   marker && map.removeLayer(marker);
@@ -30,7 +30,7 @@ map.on("click", (event) => {
   marker = L.marker([lat, lng], { icon }).addTo(map);
 });
 
-//adicionar o campo de fotos
+//adiciona o campo de fotos
 function addPhotoField() {
   //pega o container de fotos #images
   const container = document.querySelector("#images")
@@ -86,10 +86,9 @@ function toggleSelect(event){
     button.classList.add('active')
 
     //atualiza o input hidden com o valor selecionado
-    const input = document.querySelector('[name="open-on-weekends"]')
+    const input = document.querySelector('[name="open_on_weekends"]')
     
     //verifica se é sim ou nao
-
     input.value = button.dataset.value
 }
 
@@ -105,5 +104,7 @@ function validate(event){
     event.preventDefault() //não envia o formulario
     alert('Selecione um ponto de coleta no mapa')
   } 
+
+  console.log(document.querySelectorAll)
   //se nao estiver vazio, envia normalmente
 }

@@ -33,7 +33,7 @@
         <img src="/images/logo-rede-icon.png" id="logo" alt="Logo Rede Amor e Esperança" />
         <!--"/images/map-marker.svg"-->
         <h2>Escolha um ponto de coleta no mapa</h2>
-        <p>Muitas crianças estão esperando sua doação :)</p>
+        <p>Contamos com sua doação para aquisição de novas cadeiras de rodas :)</p>
       </header>
 
       <footer>
@@ -43,7 +43,9 @@
     </aside>
 
     <div id="mapid" class="animate-appear"></div>
-      <!-- mapa -->
+      <!-- mapa --> 
+      {{!-- reverse geocoding
+    Existe uma função no proprio Leaflet.GeoSearch para fazer busca pelo endereço no mapa--}}
     
     <div class="pontosDeColeta">
       {{#each pontosDeColeta}}

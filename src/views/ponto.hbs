@@ -70,7 +70,7 @@
 
           <hr />
 
-          <h2>Instruções para visita</h2>
+          <h2>Informações</h2>
 
           <p>{{ponto.instructions}}</p>
 
@@ -93,8 +93,10 @@
               </div>
             </div>
             {{!-- para entrar em contato via whatsapp automaticamente --}}
-            <a href="https://api.whatsapp.com/send?l=pt_BR&phone={{ponto.contato}}&text=Oi, quero conversar sobre doações no {{ponto.name}}" target="_blank" " class="
-              primary-button" type="button">
+            <a href="https://api.whatsapp.com/send?l=pt_BR&phone={{ponto.contato}}&text=Oi, quero conversar sobre doações no {{ponto.name}}" 
+              target="_blank" 
+              class="primary-button" 
+              type="button">
               <img src="/images/whatsapp.svg" alt="Chamar no whatsapp" />
               Entrar em contato
             </a>

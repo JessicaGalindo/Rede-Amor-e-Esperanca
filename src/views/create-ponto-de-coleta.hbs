@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
@@ -32,7 +32,7 @@
 <body>
   <div id="create-ponto-de-coleta">
     <aside class="animate-right sidebar">
-      <img src="/images/map-marker.svg" alt="Happy" />
+      <img src="/images/logo-rede-icon.png" id="logo" alt="Logo Rede Amor e Esperança" />
 
       <footer>
         <button onclick="history.back()">
@@ -45,7 +45,7 @@
       <form action="save-pontoDeColeta" method="post" onsubmit="validate(event)">
         <fieldset>
           <!-- Separa os dados -->
-          <legend>Dados</legend>
+          <legend>Novo ponto de coleta</legend>
 
           <div class="map-container">
             <div id="mapid"></div>
@@ -66,8 +66,8 @@
           </div>
 
           <div class="input-block">
-            <label for="about">Sobre <span>Máximo de 300 caracteres</span></label>
-            <textarea id="about" name="about" required></textarea>
+            <label for="description">Sobre <span>Máximo de 300 caracteres</span></label>
+            <textarea id="description" name="description" required></textarea>
           </div>
 
           <div class="input-block">
@@ -95,7 +95,7 @@
         </fieldset>
 
         <fieldset>
-          <legend>Visitação</legend>
+          <legend>Informações</legend>
 
           <div class="input-block">
             <label for="instructions">Instruções </label>
@@ -103,13 +103,13 @@
           </div>
 
           <div class="input-block">
-            <label for="opening-hours">Horário das visitas</label>
-            <input id="opening-hours" name="opening-hours" required />
+            <label for="opening_hours">Horário de funcionamento</label>
+            <input id="opening_hours" name="opening_hours" required />
           </div>
 
           <div class="input-block">
-            <label for="open-on-weekends">Atende fim de semana?</label>
-            <input type="hidden" id="open-on-weekends" name="open-on-weekends" value="1" required />
+            <label for="ope_on_weekends">Atende fim de semana?</label>
+            <input type="hidden" id="open_on_weekends" name="open_on_weekends" value="1" required />
 
             <div class="button-select">
               <button data-value="1" onclick="toggleSelect(event)" type="button" class="active">

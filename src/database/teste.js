@@ -7,7 +7,7 @@ Database.then(async (db) => {
   
   //insere no banco de dados
   await savePontoDeColeta(db, {
-    lat: "-22.1254599",
+/*     lat: "-22.1254599",
     lng: "-51.390325",
     name: "Lar das Meninas",
     description: "Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social.",
@@ -19,7 +19,7 @@ Database.then(async (db) => {
     ].toString(),
     instructions: "Venha se sentir a vontade e traga paciencia",
     opening_hours: "Das 8h as 17h.",
-    open_on_weekends: "1" 
+    open_on_weekends: "1"  */
   }) 
 
     /*lat: "-22.1254599",
@@ -37,16 +37,15 @@ Database.then(async (db) => {
     open_on_weekends: "0" 
   })  */
 
-  
   //consulta todos os dados da tabela
   const selectedPontoDeColeta = await db.all("SELECT * FROM tabelaPontoDeColeta")
   console.log(selectedPontoDeColeta)
   
    //consultar somente 1 dado pelo seu id
-  const pontoDeColeta = await db.all(
+/*   const pontoDeColeta = await db.all(
     'SELECT * FROM tabelaPontoDeColeta WHERE id = "2"'
   );
-  console.log(pontoDeColeta); 
+  console.log(pontoDeColeta);  */
 /*
   // remover um dado especifico da tabela
   console.log(await db.run("DELETE FROM tabelaPontoDeColeta WHERE id = '1'"))
