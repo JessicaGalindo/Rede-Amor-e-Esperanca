@@ -1,6 +1,6 @@
 <img src="https://github.com/JessicaGalindo/Rede-Amor-e-Esperanca/blob/master/public/images/logo-rede-alta.png" width="150">
 
-## Rede Amor e Esperança
+## About the Project Rede Amor e Esperança
 
 From October 12th to 18th, I participated in Rocketseat #NLW3 for the first time and this is the result so far.
 
