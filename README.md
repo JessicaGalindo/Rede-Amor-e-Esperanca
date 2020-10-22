@@ -2,8 +2,13 @@
 
 ## Rede Amor e Esperança
 
-Project being developed during Rocketseat's NLW # 3, from October 12th to 18th, 2020.
-The idea is to create a website for the 'Rede Amor e Esperança', a non-profit organization for the construction of the Support House for Children with Cancer in Presidente Prudente - SP.
+From October 12th to 18th, I participated in Rocketseat #NLW3 for the first time and this is the result so far.
+
+The initial idea was to develop a website for visits to orphanages (shelters), but I decided to innovate and adapt the project for a non-profit organization here in my city, called 'Rede Amor e Esperança'.
+
+Its objective is to collect cans, empty medicine bottles and aerosol deodorants, as well as plastic bottle caps. The sale of these materials is reverted to the purchase of wheelchairs, which are donated to those without financial means.
+
+To learn more about the organization, visit: https://lnkd.in/dZq3SBW
 
 
 ## Technologies 
@@ -24,23 +29,15 @@ And Back-end:
 
 ## How to use
 
-Here will be the images and descriptions. Principal content.
 
-![Home_Screen](https://github.com/JessicaGalindo/Rede-Amor-e-Esperanca/blob/master/public/readme_images/pagina_inicial.PNG)
+Here is a gif of the site in operation. Currently, there are 3 screens: Home, pontos_de_coleta and create-ponto-de-coleta.
 
-
-## Links
-
-  - Link of deployed application: 
-  - Repository: https://link_of_repository
-    - In case of sensitive bugs like security vulnerabilities, please contact
-      YOUR EMAIL directly instead of using issue tracker. We value your effort
-      to improve the security and privacy of this project!
+![Home](https://github.com/JessicaGalindo/Rede-Amor-e-Esperanca/blob/master/public/readme_images/giphy.gif)
 
 
-## Versioning
+## Features
 
-1.0.0.0
+New features will soon be implemented, such as: About us and links to the association's social networks.
 
 
 ## Author
